@@ -24,4 +24,4 @@ readStream.on('data', data =>{
 let writeStream = fs.createWriteStream('./SomeFile.txt');
 writeStream.write('Some Text');
 
-console.log(myFile)
+console.log(myFile);
