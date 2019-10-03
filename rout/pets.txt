@@ -1,0 +1,1 @@
+{"name":"Andriy","color":"8","age":"8","kind":"8"}

@@ -1,0 +1,33 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1518554974948-eb46d88b056e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+.dates{
+    color: rgb(231, 158, 158);
+    font-size: 100px;
+    text-align: center
+}
+input{
+    margin: 30px;
+    background: transparent;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+#submit{
+    background: gray;
+    opacity: 0.7;
+    margin-left: 80px;
+    transition: 0.3s
+}
+#submit:hover{
+    transform: scale(1.1);
+    transition: 0.3s
+}
