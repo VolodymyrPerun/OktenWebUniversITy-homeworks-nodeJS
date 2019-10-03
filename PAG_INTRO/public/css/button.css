@@ -1,0 +1,21 @@
+
+.menu-link {
+    display: block;
+    height: 30px;
+    width: 25%;
+    background-color: coral;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: aqua;
+    font-family: sans-serif;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 2px 2px black;
+    transition: 3s;
+}
+
+.menu-link:hover {
+    background-color: red;
+    color: black;
+    transform: rotate(7deg);
+}

@@ -1,0 +1,13 @@
+docs/
+test/
+coverage/
+
+*.log
+
+.gitignore
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.travis.yml
+
+Gruntfile.js

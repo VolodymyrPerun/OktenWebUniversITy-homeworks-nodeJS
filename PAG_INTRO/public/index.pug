@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title welcome
+        link(rel='stylesheet' href='css/main.css')
+        style.
+             .color-white {
+                 color: #ffffff;
+             }
+    body
+        h1(class= 'color-white')= title
+        h1 #{title}
+        p!= titleHtml
+        p !{titleHtml}
+        ul
+           each product in products
+                  if product.price < 200
+                     li Lowercase
+                     include partials/awesome-button
+                  else
+                     li= ' Name: '  + product.name +   ' Price: ' + product.price
+                     include partials/awesome-button
+    script(src='js/main.js')
