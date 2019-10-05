@@ -20,9 +20,9 @@ fs.mkdir('./jscx-1800/Victor_Okten', () => {
 
 fs.appendFile('./jscx-1800/Victor_Okten/Victor_Okten_info.txt',
     '\n name: Victor,' +
-    '\n study: Okten Web University, ' +
+    '\n working: Okten Web University, ' +
     '\n age: 23,' +
-    '\n status: Middle,', () => {
+    '\n status: middle', () => {
     console.log('created text info about Victor');
 });
 
@@ -38,9 +38,11 @@ fs.appendFile('./jscx-2000/Volodymyr_Okten/Volodymyr_Okten_info.txt',
     '\n name: Volodymyr,' +
     '\n study: Okten Web University, ' +
     '\n age: 33,' +
-    '\n status: student,', () => {
+    '\n status: student', () => {
         console.log('created text info about Volodymyr');
     });
+
+
 // for (let i = 0; i < 10; i++) {
 //
 //     fs.appendFile('./myDir/text.txt', '\n Hello text!',() => {
