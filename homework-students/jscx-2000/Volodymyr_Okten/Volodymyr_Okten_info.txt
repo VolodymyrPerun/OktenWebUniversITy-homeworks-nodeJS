@@ -1,0 +1,3 @@
+ name: Volodymyr,
+ age: 33,
+ status: student.

@@ -8,25 +8,24 @@
 // * Поміняти місцями студентів з 18 та з 20 години
 // Ну і само собою все робить ТІЛЬКИ через FS
 
-const createStudens = require('./createStudent');
+const createStudent = require('./createStudent');
+const addPhoto = require('./addPhoto')
 
-
-createStudens('jscx-1800', 'Victor_Okten', {
+createStudent('jscx-1800', 'Victor_Okten', {
     name: 'Victor',
     age: 23,
     status: 'middle'
-},
-    './img/Fazer.png');
+});
 
-createStudens('jscx-2000', 'Volodymyr_Okten', {
+createStudent('jscx-2000', 'Volodymyr_Okten', {
     name: 'Volodymyr',
     age: 33,
     status: 'student'
-},
-    './img/myAvatar.jpg');
+});
 
 
-
+addPhoto('jscx-1800', 'Victor_Okten', './img/Fazer.png');
+addPhoto('jscx-2000', 'Volodymyr_Okten', './img/myAvatar.jpg');
 // let readStream2 = fs.createReadStream('C:/PROGRAMMING/MAIN/myAvatar.jpg');
 // readStream.on('data', data => {
 //     console.log(data);

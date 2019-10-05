@@ -1,7 +1,6 @@
 const fs = require('fs');
-const addPhoto = require('./addPhoto');
 
-function createStudent(group, name, data, getPhoto) {
+function createStudent(group, name, data) {
     fs.mkdir(`./${group}/`, error => {
         if (!error) {
             console.log(`Group ${group} added`);
@@ -14,16 +13,13 @@ function createStudent(group, name, data, getPhoto) {
         }
     });
 
-    fs.writeFile(`./${group}/${name}/info.txt`,
+    fs.writeFile(`./${group}/${name}/${name}_info.txt`,
         ` name: ${data.name},\n age: ${data.age},\n status: ${data.status}.`,
         error => {
             if (!error) {
                 console.log('info added');
             }
         });
-
-    fs.createReadStream(`./${getPhoto}`)
-        .pipe(fs.createWriteStream(`./${group}/${name}/`))
 }
 
 module.exports = createStudent;
