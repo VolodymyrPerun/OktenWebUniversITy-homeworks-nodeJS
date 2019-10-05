@@ -60,6 +60,11 @@ readStream.on('data', data =>{
 
 readStream2.pipe(fs.createWriteStream('./jscx-2000/Volodymyr_Okten/' +
     'Volodymyr.jpg'));
+
+
+
+
+
 // for (let i = 0; i < 10; i++) {
 //
 //     fs.appendFile('./myDir/text.txt', '\n Hello text!',() => {
