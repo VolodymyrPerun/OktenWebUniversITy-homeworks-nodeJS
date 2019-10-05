@@ -3,3 +3,23 @@
  study: Okten Web University, 
  age: 33,
  status: student,
+ name: Volodymyr,
+ study: Okten Web University, 
+ age: 33,
+ status: student
+ name: Volodymyr,
+ study: Okten Web University, 
+ age: 33,
+ status: student
+ name: Volodymyr,
+ study: Okten Web University, 
+ age: 33,
+ status: student
+ name: Volodymyr,
+ study: Okten Web University, 
+ age: 33,
+ status: student
+ name: Volodymyr,
+ study: Okten Web University, 
+ age: 33,
+ status: student

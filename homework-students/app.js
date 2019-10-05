@@ -26,6 +26,15 @@ fs.appendFile('./jscx-1800/Victor_Okten/Victor_Okten_info.txt',
     console.log('created text info about Victor');
 });
 
+let readStream = fs.createReadStream('C:/PROGRAMMING/MAIN/Fazer.png');
+readStream.on('data', data =>{
+    console.log(data);
+    console.log('read data');
+});
+
+readStream.pipe(fs.createWriteStream('./jscx-1800/Victor_Okten/' +
+    'Fazer.png'));
+
 fs.mkdir('./jscx-2000', () => {
     console.log('created repo jscx-2000');
 });
@@ -43,6 +52,14 @@ fs.appendFile('./jscx-2000/Volodymyr_Okten/Volodymyr_Okten_info.txt',
     });
 
 
+let readStream2 = fs.createReadStream('C:/PROGRAMMING/MAIN/myAvatar.jpg');
+readStream.on('data', data =>{
+    console.log(data);
+    console.log('read data 2');
+});
+
+readStream2.pipe(fs.createWriteStream('./jscx-2000/Volodymyr_Okten/' +
+    'Volodymyr.jpg'));
 // for (let i = 0; i < 10; i++) {
 //
 //     fs.appendFile('./myDir/text.txt', '\n Hello text!',() => {
