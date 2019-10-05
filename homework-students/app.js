@@ -8,61 +8,33 @@
 // * Поміняти місцями студентів з 18 та з 20 години
 // Ну і само собою все робить ТІЛЬКИ через FS
 
-const fs = require('fs');
-
-fs.mkdir('./jscx-1800', () => {
-    console.log('created repo jscx-1800');
-});
-
-fs.mkdir('./jscx-1800/Victor_Okten', () => {
-    console.log('created repo Victor_Okten');
-});
-
-fs.appendFile('./jscx-1800/Victor_Okten/Victor_Okten_info.txt',
-    '\n name: Victor,' +
-    '\n working: Okten Web University, ' +
-    '\n age: 23,' +
-    '\n status: middle', () => {
-    console.log('created text info about Victor');
-});
-
-let readStream = fs.createReadStream('C:/PROGRAMMING/MAIN/Fazer.png');
-readStream.on('data', data =>{
-    console.log(data);
-    console.log('read data');
-});
-
-readStream.pipe(fs.createWriteStream('./jscx-1800/Victor_Okten/' +
-    'Fazer.png'));
-
-fs.mkdir('./jscx-2000', () => {
-    console.log('created repo jscx-2000');
-});
-
-fs.mkdir('./jscx-2000/Volodymyr_Okten', () => {
-    console.log('created repo Volodymyr_Okten');
-});
-
-fs.appendFile('./jscx-2000/Volodymyr_Okten/Volodymyr_Okten_info.txt',
-    '\n name: Volodymyr,' +
-    '\n study: Okten Web University, ' +
-    '\n age: 33,' +
-    '\n status: student', () => {
-        console.log('created text info about Volodymyr');
-    });
+const createStudens = require('./createStudent');
 
 
-let readStream2 = fs.createReadStream('C:/PROGRAMMING/MAIN/myAvatar.jpg');
-readStream.on('data', data =>{
-    console.log(data);
-    console.log('read data 2');
-});
+createStudens('jscx-1800', 'Victor_Okten', {
+    name: 'Victor',
+    age: 23,
+    status: 'middle'
+},
+    './img/Fazer.png');
 
-readStream2.pipe(fs.createWriteStream('./jscx-2000/Volodymyr_Okten/' +
-    'Volodymyr.jpg'));
+createStudens('jscx-2000', 'Volodymyr_Okten', {
+    name: 'Volodymyr',
+    age: 33,
+    status: 'student'
+},
+    './img/myAvatar.jpg');
 
 
 
+// let readStream2 = fs.createReadStream('C:/PROGRAMMING/MAIN/myAvatar.jpg');
+// readStream.on('data', data => {
+//     console.log(data);
+//     console.log('read data 2');
+// });
+//
+// readStream2.pipe(fs.createWriteStream('./jscx-2000/Volodymyr_Okten/' +
+//     'Volodymyr.jpg'));
 
 
 // for (let i = 0; i < 10; i++) {
