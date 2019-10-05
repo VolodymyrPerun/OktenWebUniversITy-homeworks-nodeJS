@@ -22,38 +22,18 @@ createStudent('jscx-2000', 'Volodymyr_Okten', {
     age: 33,
     status: 'student'
 });
+createStudent('jscx-2000', 'Volodymyr_Okten', {
+    name: 'Volodymyr',
+    age: 33,
+    status: 'student'
+});
 
+createStudent('jscx-2000', 'Andriy_Okten', {
+    name: 'Andriy',
+    age: 25,
+    status: 'student'
+});
 
 addPhoto('jscx-1800', 'Victor_Okten', './img/Fazer.png');
 addPhoto('jscx-2000', 'Volodymyr_Okten', './img/myAvatar.jpg');
-// let readStream2 = fs.createReadStream('C:/PROGRAMMING/MAIN/myAvatar.jpg');
-// readStream.on('data', data => {
-//     console.log(data);
-//     console.log('read data 2');
-// });
-//
-// readStream2.pipe(fs.createWriteStream('./jscx-2000/Volodymyr_Okten/' +
-//     'Volodymyr.jpg'));
-
-
-// for (let i = 0; i < 10; i++) {
-//
-//     fs.appendFile('./myDir/text.txt', '\n Hello text!',() => {
-//         console.log('created text');
-//     });
-// }
-//
-// fs.readFile('./text.txt', ((err, data) => {
-//     console.log(err, data.toString())
-// }));
-//
-// let readStream = fs.createReadStream('./text.txt');
-// readStream.on('data', data =>{
-//     console.log(data.toString());
-// });
-//
-// let writeStream = fs.createWriteStream('./SomeFile.txt');
-// writeStream.write('Some Text');
-//
-// console.log(myFile);
-
+addPhoto('jscx-2000', 'Andriy_Okten', './img/Andriy.jpg');

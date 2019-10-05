@@ -8,7 +8,7 @@ function createStudent(group, name, data) {
     });
 
     fs.mkdir(`./${group}/${name}`, error => {
-        if (!error) {
+        if (!error && name!==name) {
             console.log(`Student ${name} added`);
         }
     });
