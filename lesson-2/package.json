@@ -12,11 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "express-handlebars": "^3.1.0",
+    "jade": "^1.11.0",
+    "pag": "^1.0.1",
+    "pug": "^2.0.4"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3",
     "@types/express": "^4.17.1",
-    "@types/express-handlebars": "^0.0.33"
+    "@types/express-handlebars": "^0.0.33",
+    "hbs": "^4.0.5",
+    "nodemon": "^1.19.3"
   }
 }
