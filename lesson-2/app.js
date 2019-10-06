@@ -28,11 +28,6 @@ app.post('/register', (req, res) => {
     res.render('login')
 });
 
-app.get('/users', (req,res)=> {
-    res.end(JSON.stringify(users));
-    res.render('register')
-});
-
 app.get('/users/:user_id', (req,res)=> {
     console.log(req.params);
     console.log(req.query);
