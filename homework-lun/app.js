@@ -41,7 +41,7 @@ app.post('/register', (req, res) => {
     newUser.user_id = users.length + 1;
     users.push(newUser);
     console.log(newUser);
-    res.render('register')
+    res.render('login')
 });
 
 app.post('/house', (req, res) => {
