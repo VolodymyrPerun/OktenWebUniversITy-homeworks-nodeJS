@@ -26,7 +26,7 @@ app.get('/', function(req, res, next) {
 app.use((req, res, next) => {
     console.log('error 404');
     res.sendFile(path.join(__dirname, 'public', '404.html'));
-})
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port 3000!`);
