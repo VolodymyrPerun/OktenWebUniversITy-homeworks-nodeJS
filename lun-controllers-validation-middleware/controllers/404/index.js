@@ -1,0 +1,1 @@
+module.exports.render404Page = require("./404");

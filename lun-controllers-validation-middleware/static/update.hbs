@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Updating Users</title>
+</head>
+<body>
+<p>USER UPDATE</p>
+<form action="/user" method="post">
+    <input type="text" name="userID" placeholder="write id">
+    <p></p>
+    <input type ="email" name ="email" placeholder="write new email">
+    <p></p>
+    <input type="text" name="name" placeholder="write new Name">
+    <p></p>
+    <input type="password" name="password" placeholder="write new password">
+    <p></p>
+    <input type="text" name="surname" placeholder="write new user surname">
+    <p></p>
+    <input type="text" name="city" placeholder="write new user city">
+    <button>UPDATE</button>
+</form>
+
+<p>HOUSE UPDATE</p>
+<form action="/house" method="post">
+    <input type="text" name="houseID" placeholder="write house id">
+    <p></p>
+    <input type="text" name="square" placeholder="write new square">
+    <p></p>
+    <input type="text" name="city" placeholder="write new city">
+    <p></p>
+    <input type="text" name="price" placeholder="write new price">
+    <p></p>
+    <button>UPDATE</button>
+</form>
+
+</body>
+</html>
