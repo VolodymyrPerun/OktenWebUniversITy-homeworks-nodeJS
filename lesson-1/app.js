@@ -1,13 +1,17 @@
-const myFile = require('./myFile');
 const fs = require('fs');
 
+const myFile = require('./myFile');
+
+
 fs.mkdir('./myDir',() => {
+    console.log('*******************************');
     console.log('created');
+    console.log('*******************************');
 });
 
 for (let i = 0; i < 10; i++) {
 
-    fs.appendFile('./myDir/text.txt', '\n Hello text!',() => {
+    fs.appendFile('./myDir/text.txt', '\n Hello text! \n',() => {
         console.log('created text');
     });
 }
