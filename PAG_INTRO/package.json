@@ -13,7 +13,7 @@
     "express": "^4.16.4",
     "jade": "^1.11.0",
     "pag": "^1.0.1",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
