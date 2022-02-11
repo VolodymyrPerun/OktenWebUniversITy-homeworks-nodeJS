@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "jade": "^1.11.0",
     "pag": "^1.0.1",
     "pug": "^2.0.4"
