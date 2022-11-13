@@ -20,7 +20,7 @@
   "devDependencies": {
     "@types/express": "^4.17.1",
     "@types/express-handlebars": "^0.0.33",
-    "hbs": "^4.0.5",
+    "hbs": "^4.2.0",
     "nodemon": "^1.19.3"
   }
 }
